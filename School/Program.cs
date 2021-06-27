@@ -27,12 +27,11 @@ namespace School
 
     public class StudentDictionary : ISchool
     {
-        public Dictionary<int, Person> Students { get; private set; }
-
         public StudentDictionary()
         {
             Students = new Dictionary<int, Person>();
         }
+        public Dictionary<int, Person> Students { get; private set; }
         public void AddPerson(string name)
         {
             Students.Add(Students.Count + 1, new Person() { Name = name });
