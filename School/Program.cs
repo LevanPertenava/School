@@ -31,6 +31,7 @@ namespace School
         {
             Students = new Dictionary<int, Person>();
         }
+
         public Dictionary<int, Person> Students { get; private set; }
 
         public void AddPerson(string name)
